@@ -1,0 +1,14 @@
+C:\Users\mikel\Desktop\Proyecto catering\catering_back\catering_back\bin\Debug\netcoreapp2.2\catering_back.deps.json
+C:\Users\mikel\Desktop\Proyecto catering\catering_back\catering_back\bin\Debug\netcoreapp2.2\catering_back.runtimeconfig.json
+C:\Users\mikel\Desktop\Proyecto catering\catering_back\catering_back\bin\Debug\netcoreapp2.2\catering_back.runtimeconfig.dev.json
+C:\Users\mikel\Desktop\Proyecto catering\catering_back\catering_back\bin\Debug\netcoreapp2.2\catering_back.dll
+C:\Users\mikel\Desktop\Proyecto catering\catering_back\catering_back\bin\Debug\netcoreapp2.2\catering_back.pdb
+C:\Users\mikel\Desktop\Proyecto catering\catering_back\catering_back\obj\Debug\netcoreapp2.2\catering_back.csprojAssemblyReference.cache
+C:\Users\mikel\Desktop\Proyecto catering\catering_back\catering_back\obj\Debug\netcoreapp2.2\catering_back.csproj.CoreCompileInputs.cache
+C:\Users\mikel\Desktop\Proyecto catering\catering_back\catering_back\obj\Debug\netcoreapp2.2\catering_back.RazorAssemblyInfo.cache
+C:\Users\mikel\Desktop\Proyecto catering\catering_back\catering_back\obj\Debug\netcoreapp2.2\catering_back.RazorAssemblyInfo.cs
+C:\Users\mikel\Desktop\Proyecto catering\catering_back\catering_back\obj\Debug\netcoreapp2.2\catering_back.AssemblyInfoInputs.cache
+C:\Users\mikel\Desktop\Proyecto catering\catering_back\catering_back\obj\Debug\netcoreapp2.2\catering_back.AssemblyInfo.cs
+C:\Users\mikel\Desktop\Proyecto catering\catering_back\catering_back\obj\Debug\netcoreapp2.2\catering_back.RazorTargetAssemblyInfo.cache
+C:\Users\mikel\Desktop\Proyecto catering\catering_back\catering_back\obj\Debug\netcoreapp2.2\catering_back.dll
+C:\Users\mikel\Desktop\Proyecto catering\catering_back\catering_back\obj\Debug\netcoreapp2.2\catering_back.pdb
