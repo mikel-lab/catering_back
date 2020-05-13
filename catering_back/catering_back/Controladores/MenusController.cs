@@ -20,12 +20,13 @@ namespace catering_back.Controladores
             _menuRepository = menuRepository;
         }
 
-        //api/menus
-        [HttpGet("menus")]
+        //api/menus 
+        [HttpGet]
         public ActionResult<List<MenuDto>> GetMenus()
         // public IActionResult GetMenus()
         {
             var menus = _menuRepository.GetMenus().ToList();
+    
             var menusDto = new List<MenuDto>();
             foreach (var menu in menus)
             {
@@ -46,8 +47,60 @@ namespace catering_back.Controladores
             //return Ok(menusDto);
         }
 
+        //api/menus/tipos_menus/Tipo_menu 
+        [HttpGet("tipos_menus/{Tipo_menu}")]
+        public ActionResult<List<MenuDto>> GetMenusCarne(int Tipo_menu)
+        
+        {
+            var menus = _menuRepository.GetMenusCarne(Tipo_menu).ToList();
+
+            var menusDto = new List<MenuDto>();
+            foreach (var menu in menus)
+            {
+                menusDto.Add(new MenuDto
+                {
+
+                    Id = menu.Id,
+                    Nombre = menu.Nombre,
+                    Foto = menu.Foto,
+                    Id_reserva = menu.Id_reserva,
+                    Ingredientes_menu = menu.Ingredientes_menu
+
+                });
+
+            }
+            return menusDto;
+            ;
+        }
+
+        //api/menus/tipos_menus/Tipo_menu 
+        [HttpGet("tipos_menus/{Tipo_menu}")]
+        public ActionResult<List<MenuDto>> GetMenusPescado(int Tipo_menu)
+
+        {
+            var menus = _menuRepository.GetMenusPescado(Tipo_menu).ToList();
+
+            var menusDto = new List<MenuDto>();
+            foreach (var menu in menus)
+            {
+                menusDto.Add(new MenuDto
+                {
+
+                    Id = menu.Id,
+                    Nombre = menu.Nombre,
+                    Foto = menu.Foto,
+                    Id_reserva = menu.Id_reserva,
+                    Ingredientes_menu = menu.Ingredientes_menu
+
+                });
+
+            }
+            return menusDto;
+            ;
+        }
+
         //api/menus/menuId
-        [HttpGet("menus/{menuId}")]
+        [HttpGet("{menuId}")]
         public ActionResult<MenuDto> GetMenu(int menuId)
         //public IActionResult GetMenu(int menuId)
         {

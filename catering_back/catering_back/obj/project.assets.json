@@ -14496,11 +14496,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mikel\\Desktop\\Proyecto catering\\catering_back\\catering_back\\catering_back.csproj",
+      "projectUniqueName": "C:\\Users\\mikel\\Desktop\\Git-Hub\\catering_back\\catering_back\\catering_back\\catering_back.csproj",
       "projectName": "catering_back",
-      "projectPath": "C:\\Users\\mikel\\Desktop\\Proyecto catering\\catering_back\\catering_back\\catering_back.csproj",
+      "projectPath": "C:\\Users\\mikel\\Desktop\\Git-Hub\\catering_back\\catering_back\\catering_back\\catering_back.csproj",
       "packagesPath": "C:\\Users\\mikel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mikel\\Desktop\\Proyecto catering\\catering_back\\catering_back\\obj\\",
+      "outputPath": "C:\\Users\\mikel\\Desktop\\Git-Hub\\catering_back\\catering_back\\catering_back\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
