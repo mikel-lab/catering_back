@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace catering_back.Controladores
 {
+
     [Route("api/[controller]")]
     [ApiController]
     public class MenusController : Controller
@@ -49,10 +50,10 @@ namespace catering_back.Controladores
 
         //api/menus/tipos_menus/Tipo_menu 
         [HttpGet("tipos_menus/{Tipo_menu}")]
-        public ActionResult<List<MenuDto>> GetMenusCarne(int Tipo_menu)
+        public ActionResult<List<MenuDto>> GetMenusCarneOPescado(int Tipo_menu)
         
         {
-            var menus = _menuRepository.GetMenusCarne(Tipo_menu).ToList();
+            var menus = _menuRepository.GetMenusCarneOPescado(Tipo_menu).ToList();
 
             var menusDto = new List<MenuDto>();
             foreach (var menu in menus)
@@ -74,30 +75,30 @@ namespace catering_back.Controladores
         }
 
         //api/menus/tipos_menus/Tipo_menu 
-        [HttpGet("tipos_menus/{Tipo_menu}")]
-        public ActionResult<List<MenuDto>> GetMenusPescado(int Tipo_menu)
+        //[HttpGet("tipos_menus/{Tipo_menu}")]
+        // public ActionResult<List<MenuDto>> GetMenusPescado(int Tipo_menu)
 
-        {
-            var menus = _menuRepository.GetMenusPescado(Tipo_menu).ToList();
+        // {
+        // var menus = _menuRepository.GetMenusPescado(Tipo_menu).ToList();
 
-            var menusDto = new List<MenuDto>();
-            foreach (var menu in menus)
-            {
-                menusDto.Add(new MenuDto
-                {
+        // var menusDto = new List<MenuDto>();
+        // foreach (var menu in menus)
+        // {
+        // menusDto.Add(new MenuDto
+        // {
 
-                    Id = menu.Id,
-                    Nombre = menu.Nombre,
-                    Foto = menu.Foto,
-                    Id_reserva = menu.Id_reserva,
-                    Ingredientes_menu = menu.Ingredientes_menu
+        // Id = menu.Id,
+        // Nombre = menu.Nombre,
+        //Foto = menu.Foto,
+        // Id_reserva = menu.Id_reserva,
+        // Ingredientes_menu = menu.Ingredientes_menu
 
-                });
+        // });
 
-            }
-            return menusDto;
-            ;
-        }
+        // }
+        // return menusDto;
+        // ;
+        //}
 
         //api/menus/menuId
         [HttpGet("{menuId}")]

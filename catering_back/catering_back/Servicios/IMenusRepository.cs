@@ -10,9 +10,9 @@ namespace catering_back.Servicios
     {
         ICollection<Menu> GetMenus();
 
-        ICollection<Menu> GetMenusCarne(int Tipo_menu);
+        ICollection<Menu> GetMenusCarneOPescado(int Tipo_menu);
 
-        ICollection<Menu> GetMenusPescado(int Tipo_menu);
+        //ICollection<Menu> GetMenusPescado(int Tipo_menu);
 
         Menu GetMenu(int menuId);
 

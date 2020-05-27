@@ -47,14 +47,14 @@ namespace catering_back.Servicios
             return _menusDbContext.Menus.Where(m => m.Id == reservaId).ToList();
         }
 
-        public ICollection<Menu> GetMenusCarne(int Tipo_menu)
+        public ICollection<Menu> GetMenusCarneOPescado(int Tipo_menu)
         {
             return _menusDbContext.Menus.Where(m => m.Id_tipo_menu == Tipo_menu).ToList();
         }
 
-        public ICollection<Menu> GetMenusPescado(int Tipo_menu)
-        {
-            return _menusDbContext.Menus.Where(m => m.Id_tipo_menu == Tipo_menu).ToList();
-        }
+       // public ICollection<Menu> GetMenusPescado(int Tipo_menu)
+        //{
+         //   return _menusDbContext.Menus.Where(m => m.Id_tipo_menu == Tipo_menu).ToList();
+       // }
     }
 }

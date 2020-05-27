@@ -32,9 +32,9 @@ namespace catering_back
         {
 
 
-
-            services.AddMvc();
             services.AddCors();
+            services.AddMvc();
+            
             var connectionString = Configuration["connectionStrings:cateringDbConnectionString"];
             services.AddDbContext<CateringDbContext>(c => c.UseSqlServer(connectionString));
 
@@ -59,16 +59,18 @@ namespace catering_back
             //  await context.Response.WriteAsync("Hello World!");
             // });
 
-            app.UseStaticFiles();
-            app.UseStatusCodePages();
-            app.UseMvc();
-
             app.UseCors(builder => builder
             .AllowAnyOrigin()
             .AllowAnyMethod()
             .AllowAnyHeader()
             .WithExposedHeaders("Content-Disposition")
             );
+
+            app.UseStaticFiles();
+            app.UseStatusCodePages();
+            app.UseMvc();
+
+            
         }
     }
 }
